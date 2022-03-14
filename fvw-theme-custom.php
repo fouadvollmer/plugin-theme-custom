@@ -2,9 +2,11 @@
 
 /* 
   Plugin Name: Fouad Vollmer – Theme Custom
+  Description: Individual Theme Customizations
   Plugin URI: https://github.com/fouadvollmer/plugin-easy-init
-  Plugin Author: Fouad Vollmer Werbeagentur
+  Author: Fouad Vollmer Werbeagentur
   Author URI: https://www.fouadvollmer.de
+  Version: Custom
 */
 
 // Register custom modules

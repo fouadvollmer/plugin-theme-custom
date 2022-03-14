@@ -5,8 +5,6 @@ on:
     branches:
       - live
   workflow_dispatch:
-    branches:
-      - live
 
 jobs:
   build-and-deploy:
@@ -31,8 +29,7 @@ jobs:
       env:
           SSH_PRIVATE_KEY: ${{ secrets.RAIDBOXES_PRIVATE_KEY }}
           SOURCE: "dist/"
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-          TARGET: ${{ secrets.REMOTE_TARGET }}/wp-content/plugins/fvw-theme-custom
-          EXCLUDE: ".github"
+          REMOTE_HOST: ${{ secrets.RAIDBOXES_REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.RAIDBOXES_REMOTE_USER }}
+          REMOTE_PORT: ${{ secrets.RAIDBOXES_REMOTE_PORT }}
+          TARGET: ${{ secrets.RAIDBOXES_REMOTE_TARGET }}/wp-content/plugins/fvw-theme-custom
